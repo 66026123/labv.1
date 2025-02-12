@@ -8,6 +8,6 @@
          name: 66026123:latest #docker image name
          source: build
          build:
-            path: ~/66026123 #path ที่เก็บไฟล์ sourcecode 
+            path: "{{ ansible_env.HOME }}/66026123" #path ที่เก็บไฟล์ sourcecode 
          state: present
          force_source: true
